@@ -1,0 +1,6 @@
+global:
+  scrape_interval: 15s
+scrape_configs:
+  - job_name: nodes
+    static_configs:
+      - targets: ["pve01.allanso.dk:9100","pve02.allanso.dk:9100","docker01.allanso.dk:9100"]
